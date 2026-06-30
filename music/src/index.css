@@ -1,3 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+	--font-*: initial;
+	--font-inter: 'Inter', sans-serif;
+
+	/* Main colors */
+	--color-main-100: #0a0a14; /* main background */
+	--color-secondary-200: #12121f; /* secondary background */
+	--color-card-50: #1a1a2e; /* card */
+	--color-purple-60: #24243c; /* hover card */
+	--color-purple-70: #2d2d48; /* border */
+
+	/* Purple colors lighting text */
+	--color-primary-100: #8b5cf6; /* main text */
+	--color-primary-200: #a855f7; /* hover text */
+	--color-primary-300: #c084fc; /* lighting text */
+	--color-primary-400: #9333ea; /* lighting text */
+	--color-secondary-400: #4f46e5;
+	--color-secondary-500: #3b82f6;
+
+	/* Colors text */
+	--color-main-10: #ffffff; /* h1 */
+	--color-main-20: #eaeaf5; /* texts */
+	--color-main-30: #b5b6c8; /* secondary */
+	--color-main-40: #7f819a;
+
+	--breakpoint-*: initial;
+	--breakpoint-xs: 30rem;
+	--breakpoint-sm: 48rem;
+	--breakpoint-md: 66.25rem;
+}
